@@ -1,0 +1,294 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F8E29F9-8C53-4B8C-A8FC-24D25AD0F36B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Test</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Test</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <Name>nunit.framework</Name>
+      <HintPath>..\Lib\NUnit\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\src\DirectShowLib-2005.csproj">
+      <Name>DirectShowLib</Name>
+      <Project>{CE009BFA-5EF6-4153-B2A1-2FA79698A9AE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMAnalogVideoDecoderTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMAudioInputMixerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMCrossbarTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMDroppedFramesTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMStreamConfigTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMTVAudioTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMTVTunerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMVfwCompressDialogsTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMVideoCompressionTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMVideoControlTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IAMVideoProcAmpTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBaseFilterTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBasicAudioTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBasicVideo2Test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBasicVideoTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICaptureGraphBuilder2Test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IConfigAviMuxTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IConfigInterleavingTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ICreateDevEnumTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDvdCmdTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDvdControl2Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IDvdGraphBuilderTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDvdInfo2Test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IDvdStateTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEnumFiltersTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEnumMediaTypesTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IEnumPinsTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IFileSinkFilter2Test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IFileSinkFilterTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IFileSourceFilterTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IFilterGraph2Test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IFilterGraphTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IGraphBuilderTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IKsPinTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IKsPropertySetTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMediaControlTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMediaEventExTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMediaEventTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMediaFilterTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMediaPositionTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMediaSampleTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IMediaSeekingTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPersistStreamTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPersistTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPinTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPropertyBagTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IReferenceClockTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISampleGrabberCBTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISampleGrabberTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISpecifyPropertyPagesTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVideoFrameStepTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVideoWindowTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVMRFilterConfig9Test.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVMRFilterConfigTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IVMRWindowlessControl9Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IVMRWindowlessControlTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RunTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="IDvdControl2Test.resx">
+      <DependentUpon>IDvdControl2Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMediaEventExTest.resx">
+      <DependentUpon>IMediaEventExTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ToDo v10.htm" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>if not exist foo.avi copy $(SolutionDir)..\Resources\foo.avi .</PostBuildEvent>
+  </PropertyGroup>
+</Project>
